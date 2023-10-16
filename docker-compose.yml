@@ -2,7 +2,7 @@ services:
 
 #Spring Boot Application
 spring-boot-app:
-image: back-spring
+       image: back-spring
        ports:
             - "0.0.0.0:8091:8091"
 environment:
@@ -17,9 +17,9 @@ depends_on:
 
 #MySQL Database
 mysql:
-       image: mysql:5.7
-       restart: always
-       environment:
+   image: mysql:5.7
+   restart: always
+   environment:
         MYSQL_DATABASE: 'api_etudiant'
         MYSQL_ROOT_USERNAME: 'root'
         MYSQL_ROOT_PASSWORD: 'root'
@@ -31,10 +31,3 @@ mysql:
    - api_etudiant:/var/lib/mysql
 volumes:
    api_etudiant:
-
-
-
-
-
-
- 
