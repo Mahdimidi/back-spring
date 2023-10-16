@@ -12,7 +12,7 @@ pipeline {
                                      }
                         stage ("Clone repo"){
                                     steps {
-                                            sh "git clone https://github.com/MaBouz/backend.git"
+                                            sh "https://github.com/Mahdimidi/back-spring.git"
                                              }
                                            }
                        stage ("Generate backend image") {
