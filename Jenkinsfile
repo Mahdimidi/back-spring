@@ -1,8 +1,8 @@
 pipeline {
-
  agent any
  tools {
         maven 'maven'
+ }
              stages {
                    stage ("Clean up"){
                                       steps {
@@ -15,7 +15,6 @@ pipeline {
                                               }
                                             }
                     stage ("Generate back-spring image") {
-                               
                                    steps {
                                       dir("back-spring"){
                                          sh "mvn clean install"
@@ -26,10 +25,9 @@ pipeline {
                       stage ("Run docker compose") {
                                       steps {
                                         dir("back-spring"){
-                                                     sh" docker compose up -d"
+                                                     sh " docker compose up -d"
                                         }
-                                      }
-                      }
+                                    }
+                          }
                  }                         
    }
-}
