@@ -15,7 +15,7 @@ pipeline {
                                             sh "https://github.com/Mahdimidi/back-spring.git"
                                              }
                                            }
-                       stage ("Generate backend image") {
+                       stage ("Generate back-spring image") {
                               
                                   steps {
                                      dir("back-spring"){
