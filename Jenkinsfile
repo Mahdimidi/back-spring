@@ -18,7 +18,7 @@ pipeline {
                                    steps {
                                       dir("back-spring"){
                                          sh "mvn clean install"
-                                         sh "docker build -t back-spring."
+                                         sh "docker build -t back-spring ."
                                            }
                                    }
                                  }
