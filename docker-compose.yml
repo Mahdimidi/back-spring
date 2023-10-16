@@ -27,10 +27,6 @@ services:
     volumes:
       - api_etudiant:/var/lib/mysql
 
-# Liste des volumes
-volumes:
-  api_etudiant:
-   - api_etudiant:/var/lib/mysql
 #liste des volumes
 volumes:
    api_etudiant:
